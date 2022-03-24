@@ -68,13 +68,13 @@ int main()
 
     Ini(A, B, C, size);
 
-    //Prueba con implementacion clasica
+    //Prueba con implementacion clasica.
     auto started = chrono::high_resolution_clock::now();
     classic(A, B, C, size);
     auto done = chrono::high_resolution_clock::now();
     cout << "Implementacion clasica (ms): " << chrono::duration_cast<chrono::milliseconds>(done - started).count() << endl;
 
-    //Pueba con implementacion por bloques
+    //Pueba con implementacion por bloques.
     started = chrono::high_resolution_clock::now();
     blocked(A, B, C, size, 50);
     done = chrono::high_resolution_clock::now();
